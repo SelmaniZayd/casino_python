@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/first.css">
+</head>
+<body>
+    <h1>vous avez : {{bankroll}} euro</h1>
+    <h1>votre mise est de : {{mise}}</h1>
+    <h1>Votre second tirage !!</h1>
+    <ul>
+        {% for card in hand %}
+            <li>
+                <img src="/static/images/{{card}}.svg" alt="" height="200">
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h1>{{text}}</h1>
+    <h1>gain : {{gain}}</h1>
+
+    <a href="/mise">Rejouer</a>
+</body>
+</html>
+
+
